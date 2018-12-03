@@ -1,16 +1,27 @@
+# -*- coding: utf-8 -*-
+
 from gps3 import gps3
 
-gps_socket = gps3.GPSDSocket()
-data_stream = gps3.DataStream()
+class SensorGPS(threading.Thread):
+	def __init__(self):
+		threading.Thread.__init__(self)
+		self.daemon = True
+		self.gps_socket = gps3.GPSDSocket()
+		self.data_stream = gps3.DataStream()
 
-gps_socket.connect()
-gps_socket.watch()
+	def run(self):
+		self.gps_socket.connect()
+		self.gps_socket.watch()
+
+		for new_data in self.gps_socket:
+			if new_data:
+				self.data_stream.unpack(new_data)
+				print('Longitude = {lon} °'.format(lon=self.data_stream.TPV['lon']))
+				print('Latitude = {lat} °'.format(lat=self.data_stream.TPV['lat']))
+			time.sleep(0.1)
 
 try:
-	for new_data in gps_socket:
-	    if new_data:
-	        data_stream.unpack(new_data)
-	        print('Longitude = ', data_stream.TPV['lon'])
-	        print('Latitude = ', data_stream.TPV['lat'])
+	sensor_gps = SensorGPS()
+	sensor_gps.run()
 except (KeyboardInterrupt, SystemExit):
 	print("Desligando GPS...")
