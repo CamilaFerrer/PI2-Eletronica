@@ -34,24 +34,11 @@ Substitua <filename> pelo nome do arquivo que você baixou (VNC-Viewer-version-n
 
 ## Conexão VNC por nuvem
 
-Cloud connections are convenient and encrypted end-to-end, and highly recommended for connections over the Internet. There’s no firewall or router reconfiguration, and you don’t need to know the IP address of your Raspberry Pi, or provide a static one.
+Conexão por nuvem é conveniente, segura, não necessita de um firewall ou reconfigurar seu roteador e não é necessário saber o endereço IP da sua Raspberry Pi ou configurar um IP estático. Primeiramente, é necessário criar uma conta gratuita na RealVNC que permite conecxão por nuvem e direta.
 
-You’ll need a RealVNC account; it’s completely free to set up and only takes a few seconds. We’ll give you a special version of our Home subscription that enables both cloud and direct connectivity, and also in-session features such as system authentication, file transfer, printing and chat.
+Na sua Raspberry Pi, entre no Real VNC Server e acesse sua conta da RealVNC e, no dispositivo que será utilizado para controle da conexão, entre no Real VNC Viewer e também acesse sua conta. No VNC Viewer irá aparecer uma conexão automática com sua Raspberry Pi e basta clicar duas vezes para iniciar a conexão.
 
-You can apply your Home subscription to five Raspberry Pis and/or desktop computers in total. Please note you revert to the standard feature set for Windows, Mac and Linux desktop computers.
-
-Sign up for a RealVNC account by entering your email address in the box on this page, and following the instructions.
-
-On your Raspberry Pi, select Licensing from the VNC Server status menu, choose Sign in to your RealVNC account, and enter your new account email and password:
-
-On the device you will use to take control, run VNC Viewer and sign in using the same account credentials.
-
-In VNC Viewer, a connection to your Raspberry Pi automatically appears under the name of your team. Simply tap or double-click to connect:
-
-Authenticating to VNC Server
-To complete either a direct or cloud connection you must authenticate to VNC Server. Enter the user name and password you normally use to log on to your user account on the Raspberry Pi.
-
-By default, these credentials are pi and raspberry, but hopefully you’ll have changed them to something more secure by now!
+O VNC Server irá solicitar que você autentifique a conexão inserindo o nome de usuário e senha configurados na sua Raspberry Pi. O usuário padrão da Raspberry é _pi_ e a senha é _raspberry_, porém é aconselhavel mudar para uma senha mais segura assim que possível.
 
 Para mais informações acesse [aqui](https://www.realvnc.com/pt/connect/docs/raspberry-pi.html).
 
@@ -61,9 +48,7 @@ Assuming your Internet connection is on Wi-Fi, and you want to share via cable. 
 
 https://help.ubuntu.com/community/Internet/ConnectionSharing
 
-
 https://www.dexterindustries.com/howto/virtually-control-the-raspberry-pi/
-
 
 Establishing a direct connection
 Direct connections are quick and simple providing you’re joined to the same private local network as your Raspberry Pi (for example, a wired or Wi-Fi network at home, school or in the office).
@@ -72,6 +57,5 @@ If you’re connecting over the Internet, it’s much safer and more convenient 
 
 On your Raspberry Pi, discover its private IP address by double-clicking the VNC Server icon on the taskbar and examining the status dialog:
 
-On the device you will use to take control, run VNC Viewer and enter the IP address in the search bar:
-
+On the device you will use to take control, run VNC Viewer and enter the IP address in the search bar.
 
