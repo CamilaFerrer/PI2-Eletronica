@@ -1,5 +1,20 @@
 # Projeto Integrador 2
 
+## Objetivo
+
+Desenvolvimento de um robô que realiza a limpeza de locais arenosos, como parques infantis e quadras de esporte, de forma autônoma. A limpeza será focada em pequenos objetos que são mais comuns nesse tipo de ambiente como: resto de comida, embalagens plásticas, pedras maiores, galhos de árvores, folhas, etc. Além de proporcionar aos usuário um mapeamento das áreas que apresentam estados mais críticos para que possam ser aplicadas políticas de fiscalização mais eficientes.
+
+## Equipe de Eletrônica
+
+A equipe trabalhará com a definições de sensores, processamento de sinais dos sensores, automatização e comunicação.
+
+|       Nome       |              Papel            |                               Responsabilidades                            |
+|:----------------:|:-----------------------------:|:--------------------------------------------------------------------------:|
+| Alexandre Santos | Desenvolvedor                                           | Desenvolvimento dos recursos e artefatos do<br> subprojeto de eletrônica, apoia integração dos<br> outros subprojetos                                       |
+| Camila Ferrer    | Gerente do Projeto<br>Gerente de Eletrônica<br>Desenvolvedora | Gerenciar a equipe do projeto e a de eletrônica,<br> desenvolvimento dos recursos e artefatos deste<br> subprojeto, apoia integração dos outros subprojetos |
+| Edilberto Abraão | Desenvolvedor                                           | Desenvolvimento dos recursos e artefatos do<br> subprojeto de eletrônica, apoia integração dos<br> outros subprojetos                                       |
+| Jéssica Souza    | Desenvolvedor                                           | Desenvolvimento dos recursos e artefatos do<br> subprojeto de eletrônica, apoia integração dos<br> outros subprojetos                                       |
+
 
 ## Configurando conexão VNC da Raspberry Pi 3 (Raspbian) com Desktop/Laptop (Linux)
 
